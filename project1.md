@@ -64,6 +64,7 @@ STEP 2:- INSTALLING MYSQL
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
   
+  
   Enable the new virtual host using the a2ensite command: sudo a2ensite projectlamp
   
   Disable Apache's default Website: sudo a2dissite 000-default
@@ -73,6 +74,7 @@ STEP 2:- INSTALLING MYSQL
   Finally, reload Apache so these changes take effect and run: sudo systemctl reload apache2
   
   Access the website by it's public DNS name or IP
+  
   
   
 <img width="754" alt="website on web browser (P2)" src="https://user-images.githubusercontent.com/105996656/169703743-d7834bf9-eb4b-4c44-ac10-3e17655daa6c.png">
@@ -88,10 +90,13 @@ STEP 2:- INSTALLING MYSQL
         DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 </IfModule>
   
+  
   To save this file we use :wqa
   After which we run: sudo systemctl reload apache2, this will reload Apache so its take effect
   
   Now, create a new file named index.php inside your custom web root folder: vim /var/www/projectlamp/index.php
+  
+  
   
   and paste this in : 
   <?php
@@ -100,7 +105,10 @@ phpinfo();
 Save this file and reload the webpage, you will see:
 
 
-<img width="1792" alt="PHP installation working as expected  (P1)" src="https://user-images.githubusercontent.com/105996656/169704669-0a4613f2-949b-4c7b-b91b-1721289ccf66.png">
+
+<img width="1792" alt="PHP installation working as expected  (P1)" src="https://user-images.githubusercontent.com/105996656/169712947-109c0c55-77b8-4219-904e-5988c91a2eaf.png">
+
+
 
 Remove the file you created as it contains sensitive information about your PHP enviroment, use 
 
