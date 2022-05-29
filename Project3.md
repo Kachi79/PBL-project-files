@@ -1,4 +1,5 @@
 PROJECT 3: MERN STACK IMPLEMENTATION:
+
 This project requires that i implement a web solution, MERN STACK on the AWS cloud. The components for the implementation of this project are:
 MongoDB: A document-based, No-SQL database used to store application data in a form of documents.
 ExpressJS: A server side Web Application framework for Node.js.
@@ -27,7 +28,7 @@ INSTALL EXPRESSJS
  
 <img width="845" alt="installing express js p3" src="https://user-images.githubusercontent.com/105996656/170848136-da1d716d-19d0-411c-8eae-9d309e0e703b.png">
 
-The index.js file was created using : touch index.js:  
+The index.js file was created using : touch index.js  
 
 dotenv module was created using the command: npm install dotenv.
 
@@ -69,6 +70,42 @@ To achieve the end goal, a new directory was created with the command :mkdir rou
   <img width="1792" alt="postman configuration  p3" src="https://user-images.githubusercontent.com/105996656/170849279-37f8392f-07bb-49c0-a050-68c05249186f.png">
 
 <img width="1792" alt="postman:GET creation 3" src="https://user-images.githubusercontent.com/105996656/170849296-a16b67bd-83ce-449b-a27f-f7563f6ba942.png">
+
+ STEP 2 – FRONTEND CREATION
+ Firstly, in the todo directory, the same directory where i ran the backend code i ran : npx create-react-app client, after which i ran concurrently with
+ this command: pm install concurrently --save-dev.  nodemon was installed to monitor the server with this command :  npm install nodemon --save-dev.
+ 
+ In the Todo folder, i opened and modified the package.json file, also in the client folder, i added the proxy configuration : "proxy": "http://localhost:5000". 
+ 
+ <img width="1792" alt="frnt end creatn, key value pair  p3" src="https://user-images.githubusercontent.com/105996656/170870712-8d38236f-166a-4d07-98de-2488e24d001a.png">
+
+ The the reactjs App started running at  localhost:3000 after i added port 3000 to my AWS console: 
+ <img width="1792" alt="react js app running at port 300" src="https://user-images.githubusercontent.com/105996656/170870944-a9e98b90-ad00-488d-8299-81f98c307148.png">
+
+ Inside ‘components’ directory i created three files Input.js, ListTodo.js and Todo.js. using this command : touch Input.js ListTodo.js Todo.js,
+ after that i opened the input.js file to edit it using : vi Input.js.
+ 
+ After editing i moved to the client folder to install axios using : npm install axios
+ 
+ FRONTEND CREATION (CONTINUED)
+ Here i moved to the components directory to open the  ListTodo.js file using : vim  ListTodo.js., upon opening the file i pasted the given code; 
+
+ <img width="1348" alt="list Todo js file p3" src="https://user-images.githubusercontent.com/105996656/170871727-81c6772d-5633-4bcb-94f0-5960e9ab074d.png">.
+ 
+ Next i moved the src folder where i opened the App.js file and pasted the given code in it: 
+ <img width="1174" alt="api  js file edited p3" src="https://user-images.githubusercontent.com/105996656/170871997-af58081d-3261-422e-80b6-f98f18770cb3.png">
+
+After pasting, i exited the editor in the src directory and opened the App.css file with : vi App.css and pasted the code:
+
+ <img width="1792" alt="Edited App css file  p3" src="https://user-images.githubusercontent.com/105996656/170872167-9a15eb63-7075-4a19-ba01-4d1973cdf33a.png">
+
+ I open the index.css file in the src directory and pasted the given code using  vim index.css.
+ 
+ I changed to the Todo directory to run the command : npm run dev, that showed the Todo app.
+
+
+ 
+ 
 
   
  
