@@ -1,0 +1,13 @@
+Project 4 MEAN STACK DEPLOYMENT TO UBUNTU IN AWS.
+This Project requires the implementation of a simple Book Register web form using MEAN stack.
+The components of the MEAN stack are:
+
+MongoDB (Document database) – Stores and allows to retrieve data.
+Express (Back-end application framework) – Makes requests to Database for Reads and Writes.
+Angular (Front-end application framework) – Handles Client and Server Requests
+Node.js (JavaScript runtime environment) – Accepts requests and displays results to end user
+
+Step 1: Install NodeJs:
+sudo apt update was introduced: <img width="1792" alt="sudo apt update  p4" src="https://user-images.githubusercontent.com/105996656/170894624-c55808cb-ee5e-498f-a388-240a43b1b394.png">
+ 
+
